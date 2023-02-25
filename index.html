@@ -1,16 +1,43 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet"  type="text/css" href="./styles/home.css">
+        <link rel="stylesheet" type="text/css" href="./styles/form.css">
+        
     </head>
     <body>
         <nav>
             <div class = "navbar">
                 <a href="#">About</a> 
-                <a href="https://www.blogger.com/profile/16452540931828197753">Blog</a> 
+                <a href="https://www.blogger.com/profile/16452540931828197753">Blogs</a> 
                 <a href="#">Projects</a> 
-                <a href="form.html">Message</a>
+                <a href="#" onclick="document.getElementById('id01').style.display='block'" style="width: auto;">Message</a>
             </div>
         </nav>
+       <!-- form -->
+        <div id="id01" class="modal" >
+            <form class="modal-content animate">
+                <div class="imgcontainer">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close" >&times;</span>
+
+                </div>
+                <br>
+                <div class="container">
+                    <input type="text" placeholder="Enter your name" name="uname" required >
+                    <label><b></b></label>
+                    
+                 <input type="text" placeholder="Enter your message" name="msg" required id="text_area">
+                    <button type="submit">Send</button>
+             <div class="container" style="background-color: #f1f1f1">
+                 <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">
+                     Cancel                
+                 </button>
+                 
+             </div> 
+         </form>
+     </div>	
+    <!-- JS -->
+     <script></script>
+        
     </body>
 </html>

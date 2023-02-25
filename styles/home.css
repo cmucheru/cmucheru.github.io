@@ -1,0 +1,57 @@
+ /* Add a black background color to the top navigation */
+ .navbar {
+    background-color: #CCCCCC;
+    overflow: hidden;
+    width: 700px;
+    margin: auto;
+  }
+  /* Style the links inside the navigation bar */
+  .navbar a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+  }
+
+
+/* form  */
+input[type=text],input[type=password]{
+	width:100%;
+	padding: 12px 20px;
+	margin:8px 0;
+	display: inline-block;
+	border:1px solid #ccc;
+	box-sizing: border-box;
+}
+
+button{
+	background-color: rgb(70, 73, 73);
+	color: white;
+	padding: 14px 20px;
+	margin:8px 0;
+	border:none;
+	cursor: pointer;
+	width: 100%;
+	border-radius: 3px;
+}
+
+.cancelbtn{
+	width: auto;
+	padding:10px 18px;
+	background-color: #4682b4;
+}
+
+
+.imgcontainer{
+	text-align: center;
+	margin:24px 0 12px 0;
+	position: relative;
+}
+
+
+
+.container{
+	padding:16px;
+}

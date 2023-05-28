@@ -5,17 +5,7 @@ const createElement = (element) => {
 };
 
 const projectObject = [
-   {
-      className: 'blur-bg1',
-      title: 'Homepage',
-      innerHtml: `This is book store created with reactJS.<br />
-							Users can browse through to pick their like. <br />
-							`,
-      flipCardBtnHref: '#',
-      projectLinkHref:
-         '#',
-   },
-
+  
    {
       className: 'blur-bg2',
       title: 'Homepage',

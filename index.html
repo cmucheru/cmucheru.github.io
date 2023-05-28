@@ -1,47 +1,93 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <link rel="stylesheet"  type="text/css" href="./styles/home.css">
-        <link rel="stylesheet" type="text/css" href="./styles/form.css">
-        
-    </head>
-    <body>
-        <nav>
-            <div class = "navbar">
-                <a href="#">About</a> 
-                <a href="https://www.blogger.com/profile/16452540931828197753">Blogs</a> 
-                <a href="#">Projects</a> 
-                <a href="#" onclick="document.getElementById('id01').style.display='block'" style="width: auto;">Message</a>
-            </div>
-        </nav>
-    
+<html lang="en">
+  <head id="head">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A multi page portfolio website" />
+    <title>cmucheru</title>
 
-        <div id="id01" class="modal" >
-            <form class="modal-content animate" action="" onsubmit="getFormData(event)">
-                <div class="imgcontainer">
-                    <span onclick="document.getElementById('id01').style.display='none'" class="close" >&times;</span>
+    <link type="text/css" rel="stylesheet" href="./assets/styles/style.css" />
+    <link type="text/css" rel="stylesheet" href="./assets/styles/contact.css" />
+    <link type="text/css" rel="stylesheet" href="./assets/styles/work.css" />
+   
 
-                </div>
-                <br>
-                <div class="container">
-                    <input type="text" placeholder="Enter your name" name="uname" required class="details" >
-                    <label><b></b></label>
-                    
-                 <input type="text" placeholder="Enter your message" name="msg" required id="text_area" class="details">
-                    <button type="submit" id="submit_btn">Send</button>
-             <div class="container" style="background-color: #f1f1f1">
-                 <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">
-                     Cance               
-                 </button>
-                 
-             </div> 
-         </form>
-     </div>	
-          
+    <script src="./assets/script/app.js" defer></script>
+    <script src="./assets/script/work.js" defer></script>
 
+    <style>
+      .main-section--title__main {
+        width: 100%;
+        max-width: 24rem;
+      }
+    </style>
+  </head>
+  <body id="body-content--home">
+    <!-- code for header section -->
+    <header id="header">
+     
 
-    <!-- JS -->
-     <script src="./script/form.js"></script>
-        
-    </body>
+      <!-- nav bar section code  -->
+      <nav id="nav-bar">
+        <!-- nav bar item list -->
+        <ul class="nav-bar__list">
+            <a class="nav-bar__link active">Caleb Mucheru</a>
+          </li>
+        </ul>
+        <div class="nav-bar__list--after"></div>
+ </nav>
+
+      <div id="light-dark" class="light-mode"></div>
+    </header>
+
+    <main id="main">
+      <!--container for main section title  -->
+      <section class="main-section--title">
+        <h1 class="">
+          <div class="main-section--title__main">Some Works ...</div>
+        </h1>
+      </section>
+
+      <!-- container for main section content -->
+      <section
+        id="project-section"
+        class="main-section--project-content"
+      >Stories ...</section>
+
+    <!-- code for footer section -->
+    <footer id="footer">
+
+      <!-- container for footer content -->
+      <div class="footer-content">
+
+        <div class="footer-section-content">
+          <!-- container for social media icons -->
+          <div class="social-media">
+            <a href="https://github.com/cmucheru" class="social-media__link"
+              ><img
+                src="./assets/images/icons/github.svg"
+                alt="Github"
+                class="social-media__image"
+            /></a>
+            <a
+              href="https://www.linkedin.com/in/caleb-mucheru-b46661168/"
+              class="social-media__link"
+              ><img
+                src="./assets/images/icons/linkedIn.svg"
+                alt="linkedin"
+                class="social-media__image"
+            /></a>
+            <a
+              href="https://wa.me/254798762330?text=Hello!"
+              class="social-media__link"
+              ><img
+                src="./assets/images/icons/whatsapp.svg"
+                alt="What's app"
+                class="social-media__image"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

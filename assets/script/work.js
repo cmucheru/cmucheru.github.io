@@ -11,9 +11,9 @@ const projectObject = [
       innerHtml: `This is book store created with reactJS.<br />
 							Users can browse through to pick their like. <br />
 							`,
-      flipCardBtnHref: 'https://interior-design-landing-page.netlify.app/',
+      flipCardBtnHref: '#',
       projectLinkHref:
-         'https://github.com/babboe1/Interior-Design-Langing-Page',
+         '#',
    },
 
    {

@@ -8,7 +8,7 @@
 }
 
 :root {
-	--main-color: #ea1d5d;
+	--main-color: #faf9f9;
 }
 
 /* GENERAL STYLES */
@@ -327,7 +327,7 @@ h2 {
 
 /* STYLES FOR HOME PAGE BODY */
 #body-content--home {
-	color: #21243d;
+	color: #9a9ba5;
 	font-family: 'Montserrat Alternates', sans-serif;
 	margin: 0 auto;
 	max-width: 1440px;
@@ -339,7 +339,7 @@ h2 {
 #header {
 	/* border: 1px solid red; */
 	display: flex;
-	background-color: #21243d;
+	background-color: #292b38;
 	justify-content: space-between;
 	padding: 1rem;
 	position: sticky;
@@ -540,7 +540,7 @@ h2 {
 }
 .contact-btn-link {
 	background: var(--main-color);
-	background-image: linear-gradient(to bottom, var(--main-color), #b82c64);
+	background-image: linear-gradient(to bottom, var(--main-color), #d6cbd0);
 	border-radius: 12px;
 	color: #fff;
 	display: block;
@@ -551,7 +551,7 @@ h2 {
 
 .contact-btn-link:hover {
 	cursor: pointer;
-	background-image: linear-gradient(to bottom, #b82c64, var(--main-color));
+	background-image: linear-gradient(to bottom, #d6c0c9, var(--main-color));
 }
 
 /* STYLES FOR ABOUT ME SECTION */
@@ -696,7 +696,7 @@ h2 {
 
 .project-section__btn-link:hover {
 	background: var(--main-color);
-	background-image: linear-gradient(to bottom, var(--main-color), #b82c64);
+	background-image: linear-gradient(to bottom, var(--main-color), #dbcbd2);
 	color: #fff;
 }
 

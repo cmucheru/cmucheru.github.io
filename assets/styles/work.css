@@ -34,7 +34,7 @@
 .project-blur:hover {
    filter: blur(0);
    z-index: 10;
-   border: 2px solid yellow;
+   border: 2px solid rgb(216, 216, 132);
 }
 
 .project-tile {

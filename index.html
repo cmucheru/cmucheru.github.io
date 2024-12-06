@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Caleb Mucheru - Tech Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap" rel="stylesheet">
     <style>
         /* Monochrome color scheme */
         :root {
@@ -15,11 +16,12 @@
         }
 
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Mulish', sans-serif;
             margin: 0;
             padding: 0;
             background-color: var(--background-color);
             color: var(--primary-color);
+            font-weight: 200; /* Thin font weight */
         }
 
         header {
@@ -39,7 +41,7 @@
             color: white;
             text-decoration: none;
             padding: 15px 20px;
-            font-weight: bold;
+            font-weight: 200;
             display: inline-block;
         }
 
@@ -91,11 +93,7 @@
 </head>
 
 <body>
-    <header>
-        <h1>Caleb Mucheru's Tech Portfolio</h1>
-    </header>
-
-    <nav>
+ <nav>
         <a href="javascript:void(0);" onclick="showSection('about')">About Me</a>
         <a href="javascript:void(0);" onclick="showSection('works')">Works</a>
     </nav>
@@ -108,14 +106,21 @@
     <section id="works">
         <h2 class="content-title">Works</h2>
         <p class="content-text">Here are some of the key projects and roles I've worked on:</p>
-        <ul class="work-list">
-            <li><strong>Software Engineer, Bitnine Global (2023 - 2024):</strong> During my tenure at Bitnine, I specialized in designing and optimizing database systems. This experience honed my skills in data management, system architecture, and performance tuning, ensuring efficient and reliable data solutions.</li>
-            <li><strong>Computer Engineer, Nakuja Project (2021 - 2022):</strong> At Nakuja, I was deeply involved in the development of firmware and software solutions for aerospace applications. This role required precision, innovation, and a deep understanding of both embedded systems and high-level software development.</li>
-        </ul>
+      <ul class="work-list">
+    <li>
+        <h3>Software Engineer, Bitnine Global (2023 - 2024):</h3>
+        <p>During my tenure at Bitnine, I specialized in designing and optimizing database systems. This experience honed my skills in data management, system architecture, and performance tuning, ensuring efficient and reliable data solutions.</p>
+    </li>
+        <li>
+            <h3>Computer Engineer, Nakuja Project (2021 - 2022):</h3>
+            <p>At Nakuja, I was deeply involved in the development of firmware and software solutions for aerospace applications. This role required precision, innovation, and a deep understanding of both embedded systems and high-level software development.</p>
+        </li>
+   </ul>
+
     </section>
 
     <footer>
-        <p>&copy; 2024 Caleb Mucheru. All rights reserved.</p>
+        <p>&copy; 2024. All rights reserved.</p>
     </footer>
 
     <script>

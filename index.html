@@ -4,67 +4,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'none'; font-src 'self';">
     <title>Caleb Mucheru - Tech Portfolio</title>
     <style>
+        /* Monochrome color scheme */
+        :root {
+            --primary-color: #333; /* Dark gray */
+            --secondary-color: #777; /* Medium gray */
+            --accent-color: #aaa; /* Light gray */
+            --background-color: #f4f4f4; /* Light background */
+        }
+
         body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background-color: var(--background-color);
+            color: var(--primary-color);
         }
 
         header {
-            background-color: #2c3e50;
+            background-color: var(--primary-color);
             color: white;
-            text-align: center;
             padding: 20px 0;
+            text-align: center;
         }
 
-        header h1 {
-            margin: 0;
-            font-size: 2.5em;
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: var(--secondary-color);
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 15px 20px;
+            font-weight: bold;
+            display: inline-block;
+        }
+
+        nav a:hover {
+            background-color: var(--primary-color);
+            color: white;
         }
 
         section {
             padding: 20px;
-            text-align: center;
-        }
-
-        .portfolio {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            margin-top: 20px;
-        }
-
-        .portfolio-item {
-            background-color: white;
-            border-radius: 8px;
-            padding: 15px;
-            width: 30%;
             margin: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: none;
         }
 
-        .portfolio-item h2 {
-            font-size: 1.5em;
-            color: #2c3e50;
-        }
-
-        .portfolio-item p {
-            color: #7f8c8d;
+        section.active {
+            display: block;
         }
 
         footer {
-            background-color: #34495e;
+            background-color: var(--primary-color);
             color: white;
             text-align: center;
             padding: 10px 0;
-            position: absolute;
-            bottom: 0;
+            position: fixed;
             width: 100%;
+            bottom: 0;
         }
+
+        .content-title {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+        }
+
+        .content-text {
+            font-size: 1.2em;
+            color: var(--secondary-color);
+        }
+
+        .work-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .work-list li {
+            margin: 15px 0;
+        }
+
     </style>
 </head>
 
@@ -73,29 +95,40 @@
         <h1>Caleb Mucheru's Tech Portfolio</h1>
     </header>
 
-    <section>
-        <h2>Welcome to My Portfolio</h2>
-        <p>Here you'll find some of the work I've done in software development, machine learning, and cloud computing.</p>
+    <nav>
+        <a href="javascript:void(0);" onclick="showSection('about')">About Me</a>
+        <a href="javascript:void(0);" onclick="showSection('works')">Works</a>
+    </nav>
+
+    <section id="about" class="active">
+        <h2 class="content-title">About Me</h2>
+        <p class="content-text">I have a background in electronics and computer engineering from JKUAT, which has provided me with a robust foundation in technology principles. My academic background enabled me to delve into various technical domains and apply my knowledge to real-world problems. Besides, I have a knack for niche fields.</p>
     </section>
 
-    <section class="portfolio">
-        <div class="portfolio-item">
-            <h2>Project 1: AgensSQL DBMS</h2>
-            <p>Improved AgensSQL DBMS with Oracle Call Interface and enhanced performance with caching mechanisms.</p>
-        </div>
-        <div class="portfolio-item">
-            <h2>Project 2: Model Rocket Recovery System</h2>
-            <p>Developed a website application and onboard software for a model rocket recovery system, improving safety by 50%.</p>
-        </div>
-        <div class="portfolio-item">
-            <h2>Project 3: Apache AGE</h2>
-            <p>Contributed to the Apache AGE project by optimizing query performance and developing its web GUI, Apache-AGE Viewer.</p>
-        </div>
+    <section id="works">
+        <h2 class="content-title">Works</h2>
+        <p class="content-text">Here are some of the key projects and roles I've worked on:</p>
+        <ul class="work-list">
+            <li><strong>Software Engineer, Bitnine Global (2023 - 2024):</strong> During my tenure at Bitnine, I specialized in designing and optimizing database systems. This experience honed my skills in data management, system architecture, and performance tuning, ensuring efficient and reliable data solutions.</li>
+            <li><strong>Computer Engineer, Nakuja Project (2021 - 2022):</strong> At Nakuja, I was deeply involved in the development of firmware and software solutions for aerospace applications. This role required precision, innovation, and a deep understanding of both embedded systems and high-level software development.</li>
+        </ul>
     </section>
 
     <footer>
         <p>&copy; 2024 Caleb Mucheru. All rights reserved.</p>
     </footer>
+
+    <script>
+        function showSection(sectionId) {
+            // Hide all sections
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => section.classList.remove('active'));
+
+            // Show the selected section
+            const activeSection = document.getElementById(sectionId);
+            activeSection.classList.add('active');
+        }
+    </script>
 </body>
 
 </html>

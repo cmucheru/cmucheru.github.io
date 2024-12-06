@@ -1,33 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head id="head">
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="portfolio website" />
-    <meta http-equiv='cache-control' content='no-cache'> 
-    <meta http-equiv='expires' content='0'> 
-    <meta http-equiv='pragma' content='no-cache'>
-    <title>cmucheru</title>
-    <link rel="icon" type="image/x-icon" href="./assets/images/icons/icons8-owl-64.png"> 
-    <link type="text/css" rel="stylesheet" href="./assets/styles/style.css" />
-    <link type="text/css" rel="stylesheet" href="./assets/styles/contact.css" />
-    <link type="text/css" rel="stylesheet" href="./assets/styles/work.css" />
-    <style>
-      .main-section--title__main {
-        width: 100%;
-        max-width: 24rem;
-      }
-    </style>
-  </head>
-  
-  <body id="body-content--home">
-    
-          </div>
-        </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Caleb Mucheru - Tech Portfolio</title>
+  <style>
+    /* CSS Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background-color: #4CAF50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #333;
+      padding: 10px 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      padding: 20px;
+      text-align: center;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    section h2 {
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+    .skills, .experience, .education {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+    .skills ul, .experience ul {
+      text-align: left;
+    }
+    .skills li, .experience li {
+      margin-bottom: 10px;
+    }
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #333;
+      color: white;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1em;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Caleb Mucheru - Tech Portfolio</h1>
+    <p>BSc. Electronic & Computer Engineering | Software Engineer | Cloud Enthusiast</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hi, I'm Caleb Mucheru, a passionate software engineer with a strong background in cloud technologies, Python programming, and system development. I specialize in building scalable applications and enhancing system performance. I enjoy solving complex problems and creating solutions that make an impact.</p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div>
+        <h3>Programming Languages</h3>
+        <ul>
+          <li>C</li>
+          <li>C++</li>
+          <li>JavaScript</li>
+          <li>Python</li>
+        </ul>
       </div>
-    </footer>
-    <script src="./assets/script/app.js" defer></script>
-    <script src="./assets/script/work.js" defer></script>
-  </body>
+      <div>
+        <h3>Technologies & Tools</h3>
+        <ul>
+          <li>Linux</li>
+          <li>MERN Stack</li>
+          <li>Oracle SQL</li>
+          <li>PostgreSQL</li>
+          <li>DevOps Tools</li>
+          <li>Cloud Computing</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2>Work Experience</h2>
+    <div class="experience">
+      <div>
+        <h3>Software Engineer | Bitnine Global Inc. (Remote)</h3>
+        <p>August 2023 - April 2024</p>
+        <ul>
+          <li>Improved AgensSQL DBMS by creating open-source libraries for Oracle Call Interface applications.</li>
+          <li>Enhanced Apache AGE project performance, optimized queries, and developed its web GUI (Apache-AGE Viewer).</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Engineer Intern | Nakuja Project</h3>
+        <p>May 2021 - Dec 2022</p>
+        <ul>
+          <li>Developed website applications with React and Node.js for model rocket recovery monitoring.</li>
+          <li>Engineered onboard computer software in C/C++ to increase rocket recovery precision by 50%.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <p><strong>BSc. Electronic & Computer Engineering</strong> | Jomo Kenyatta University of Agriculture and Technology | 2017 - 2022</p>
+    <p>Grade: Second Class Honours, Upper Division</p>
+    <p>Relevant Coursework: Operating Systems, Digital Systems Design, Database Systems, OOP, Cloud Computing, Cybersecurity, Machine Learning.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:mucherucaleb7@gmail.com">mucherucaleb7@gmail.com</a></p>
+    <button onclick="sendMessage()">Send Message</button>
+  </section>
+
+  <footer>
+    &copy; 2024 Caleb Mucheru. All Rights Reserved.
+  </footer>
+
+  <script>
+    // JavaScript (ES6)
+    const sendMessage = () => {
+      alert("Thanks for reaching out! I’ll get back to you soon.");
+    };
+  </script>
+</body>
 </html>

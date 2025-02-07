@@ -35,7 +35,7 @@ body {
 
 .left-panel a.active {
   font-weight: bold;
-  color: #007BFF;
+  color: #007bff;
   text-decoration: underline;
 }
 
@@ -55,6 +55,13 @@ body {
 /* Sections */
 section {
   display: none;
+}
+h2,h3{
+  color: skyblue;
+}
+a {
+  color: skyblue;
+  text-decoration: none;
 }
 
 section.active {

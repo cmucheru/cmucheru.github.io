@@ -7,11 +7,13 @@ body {
   color: var(--primary-color, #333);
 }
 
+/* Container */
 .container {
   display: flex;
   min-height: 100vh;
 }
 
+/* Left Panel Navigation */
 .left-panel {
   width: 250px;
   background-color: var(--secondary-color, #777);
@@ -19,6 +21,7 @@ body {
   position: fixed;
   height: 100%;
   overflow-y: auto;
+  transition: transform 0.3s ease-in-out;
 }
 
 .left-panel a {
@@ -29,29 +32,18 @@ body {
   margin-bottom: 10px;
   font-weight: 200;
 }
+
 .left-panel a.active {
-	font-weight: bold;
-	color: #007BFF; /* Change to desired active color */
-	text-decoration: underline;
-  }
-  
-  .main-content section {
-	display: none;
-  }
-  
-  .main-content section.active {
-	display: block;
-  }
-  
+  font-weight: bold;
+  color: #007BFF;
+  text-decoration: underline;
+}
 
 .left-panel a:hover {
   background-color: var(--primary-color, rgb(30, 43, 43));
 }
-h2,
-h3 {
-  color: aqua;
-}
 
+/* Main Content */
 .main-content {
   margin-left: 270px;
   padding: 40px;
@@ -60,6 +52,7 @@ h3 {
   color: white;
 }
 
+/* Sections */
 section {
   display: none;
 }
@@ -68,6 +61,7 @@ section.active {
   display: block;
 }
 
+/* Profile Picture */
 .profile-pic {
   width: 150px;
   height: auto;
@@ -75,7 +69,74 @@ section.active {
   margin-bottom: 10px;
 }
 
+/* Social Icons */
 .social-icons a {
   margin-right: 10px;
   height: 50px;
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .left-panel {
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .left-panel a {
+    display: inline-block;
+    margin: 5px;
+  }
+
+  .main-content {
+    margin-left: 0;
+    padding: 20px;
+  }
+
+  .profile-pic {
+    width: 100px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+}
+
+/* Extra Small Screens */
+@media screen and (max-width: 480px) {
+  .left-panel {
+    text-align: center;
+    padding: 5px;
+  }
+
+  .left-panel a {
+    font-size: 14px;
+    padding: 5px;
+  }
+
+  .profile-pic {
+    width: 80px;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  h3 {
+    font-size: 0.9rem;
+  }
+
+  .main-content {
+    padding: 10px;
+  }
 }
